@@ -175,6 +175,9 @@ function createMyComponent(item){
   articleExpBtn.addEventListener('click', (event)=>{
     console.log('we got here', event.target)
     article.classList.toggle('article-open');
+    gsap.from(articleP1, {duration: 0.5, y:-400});
+    gsap.from(articleP2, {duration: 0.5, y:-400});
+    gsap.from(articleP3, {duration: 0.5, y:-400});
   })
 
   /*buttonPanel.addEventListener('click', (event) => {

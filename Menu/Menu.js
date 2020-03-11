@@ -34,6 +34,8 @@ let menuItems = [
   
 */
 
+
+
 function myMenu(myArray){
   //make elements
   const menu = document.createElement('div');
@@ -56,7 +58,7 @@ function myMenu(myArray){
   document.querySelector('.menu-button').addEventListener('click', function(){
     console.log('we got ehre');
     menu.classList.toggle('menu--open');
-    // gsap.to(".menu--open", {duration: 2, y:400});
+    gsap.from(".menu--open", {duration: 0.5, x:-400});
   })
   return menu;
 }
